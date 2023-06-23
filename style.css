@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  background-image: linear-gradient(to right, #4834d4, #686de0);
+}
+.clock {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 5px solid #353b48;
+  border-radius: 50%;
+  background-color: #dcdde1;
+}
+.numbers div {
+  font-size: 2rem;
+}
+.twelve {
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.three {
+  position: absolute;
+  top: 50%;
+  right: 4px;
+
+  transform: translateY(-50%);
+}
+.six {
+  position: absolute;
+  left: 50%;
+  bottom: 4px;
+  transform: translateX(-50%);
+}
+.nine {
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.orgin {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(102, 100, 104);
+  z-index: 4;
+}
+.arrows {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.arrows .arrow {
+  position: absolute;
+  bottom: 50%;
+  transform-origin: bottom;
+  border-radius: 100% 100% 0 0;
+}
+#hour {
+  width: 9px;
+  height: 80px;
+  background-color: black;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+#minute {
+  width: 6px;
+  height: 130px;
+  background-color: black;
+
+  transform: rotate(205deg);
+  z-index: 2;
+}
+#second {
+  width: 3px;
+  height: 110px;
+  background-color: rgb(255, 47, 0);
+  z-index: 3;
+}
+.day {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  border: 2px solid black;
+  background-color: azure;
+  line-height: 25px;
+  z-index: 0;
+}
+#day-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
