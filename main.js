@@ -17,8 +17,7 @@ function currendTimeFunction() {
   hour = currentTime.getHours();
   minute = currentTime.getMinutes();
   second = currentTime.getSeconds();
-  console.log(hour, minute, second);
-  analogHour = (hour / 24) * 360;
+  analogHour = (hour / 12) * 360;
   analogMinute = (minute / 60) * 360;
   analogSecond = (second / 60) * 360;
   hourEl.style.transform = `rotate(${analogHour + (minute / 61) * 30}deg)`;
