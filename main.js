@@ -12,7 +12,7 @@ var analogMinute;
 var analogSecond;
 var day;
 
-function currendTimeFunction() {
+function currentTimeFunction() {
   currentTime = new Date();
   hour = currentTime.getHours();
   minute = currentTime.getMinutes();
@@ -26,4 +26,4 @@ function currendTimeFunction() {
   day = currentTime.getDate();
   dayEl.innerHTML = day;
 }
-setInterval(currendTimeFunction, 1000);
+setInterval(currentTimeFunction, 1000);
