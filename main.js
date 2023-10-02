@@ -1,16 +1,16 @@
-var hourEl = document.getElementById("hour");
-var minuteEl = document.getElementById("minute");
-var secondEl = document.getElementById("second");
-var dayEl = document.getElementById("day-container");
+const hourEl = document.getElementById("hour");
+const minuteEl = document.getElementById("minute");
+const secondEl = document.getElementById("second");
+const dayEl = document.getElementById("day-container");
 
-var currentTime;
-var hour;
-var minute;
-var second;
-var analogHour;
-var analogMinute;
-var analogSecond;
-var day;
+let currentTime;
+let hour;
+let minute;
+let second;
+let analogHour;
+let analogMinute;
+let analogSecond;
+let day;
 
 function currentTimeFunction() {
   currentTime = new Date();
